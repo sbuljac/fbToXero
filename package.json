@@ -1,6 +1,6 @@
 {
   "name": "fbtoxero",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Converts Fire Bussiness export to Xero compatible format",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,9 @@
   { 
     "type" : "git", 
     "url" : "https://github.com/sbuljac/fbToXero"
+  },
+  "bin": {
+    "fbtoxero": "index.js"
   },
   "dependencies": {
     "csv": "^1.1.1",
