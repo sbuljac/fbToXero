@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const moment = require('moment')
 const fs = require('fs')
 const argv = require('optimist').argv
