@@ -8,7 +8,7 @@ const csv = require('csv')
 fs.createReadStream(argv._[0])
   .pipe(csv.parse({ columns: true, relax_column_count: true }))
   .pipe(csv.transform((record) => {
-    const md = moment(record.data)
+    const md = moment(record.date)
     return {
       Date: md.format('MM/DD/YYYY'),
       Reference: md.format('YYYYMMDD-HHmm'),
